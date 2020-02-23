@@ -1,2 +1,2 @@
-# dailySpecials
-Daily Specials react app
+# chalkboard
+Chalkboard react app
