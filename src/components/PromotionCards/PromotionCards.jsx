@@ -5,19 +5,20 @@ import {
   Overlay,
   Popover,
   OverlayTrigger,
-  ButtonToolbar
+  ButtonToolbar,
+  Modal
 } from "react-bootstrap";
-import food_img from "./food_img.jpg";
+import food_img from "./anchoNagave.png";
 
 class PromotionCards extends React.Component {
   render() {
     return (
-      <Card bg="dark" border="info" text="white" style={{ width: "100%" }}>
+      <Card bg="light" border="light" text="dark" style={{ width: "100%" }}>
         <Card.Img variant="top" src={food_img} />
         <Card.Body>
-          <Card.Title>Kings Kitchen</Card.Title>
+          <Card.Title>ANCHO & AGAVE</Card.Title>
           <Card.Text>
-            King's Kitchen offerning special steak at $ 6.99 only
+            ABC' offerning special steak at $ 6.99 only
           </Card.Text>
           <ButtonToolbar>
             {["top"].map(placement => (
@@ -35,7 +36,7 @@ class PromotionCards extends React.Component {
                   </Popover>
                 }
               >
-                <Button variant="primary">See Specials!!</Button>
+                <Button variant="link">Click for details</Button>
               </OverlayTrigger>
             ))}
           </ButtonToolbar>
