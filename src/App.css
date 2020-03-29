@@ -28,6 +28,11 @@
   color: white;
 }
 
+.cardNoPadding {
+  padding-left: 5px  !important;
+  padding-right: 5px  !important;
+}
+
 .App-link {
   color: #61dafb;
 }
