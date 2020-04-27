@@ -6,28 +6,22 @@ import PodsRow from "./components/PodsRow";
 import {Row, Col} from "react-bootstrap";
 
 const data = {
-  "promotionalPanel": [],
+  "panels": [
+    {
+      "image": "/images/car1.jpg",
+      "header": "Header",
+      "caption": "Caption"
+    },
+    {
+      "image": "/images/car2.jpg",
+      "header": "Header",
+      "caption": "Caption"
+    },
+    {
+      "image": "/images/car3.jpg"
+    }
+  ],
   "pods": [
-    {
-      "title": "ANCHO & AGAVE",
-      "description": "Offering 20% off on specials",
-      "details": "Steak Day! This wednesday buy one get one free Steak Lunch at King's Kitchen.",
-      "image": "/images/anchoNagave.png"
-    },
-    {
-      "title": "Cafe XYZ",
-      "image": "/images/spcl2.jpg"
-    },
-    {
-      "title": "ANCHO & AGAVE",
-      "description": "Offering 20% off on specials",
-      "details": "Steak Day! This wednesday buy one get one free Steak Lunch at King's Kitchen.",
-      "image": "/images/anchoNagave.png"
-    },
-    {
-      "title": "Cafe ABC",
-      "image": "/images/spcl2.jpg"
-    },
     {
       "title": "ANCHO & AGAVE",
       "description": "Offering 20% off on specials",
@@ -43,10 +37,6 @@ const data = {
       "description": "Offering 20% off on specials",
       "details": "Steak Day! This wednesday buy one get one free Steak Lunch at King's Kitchen.",
       "image": "/images/food_img.jpg"
-    },
-    {
-      "title": "Cafe XYZ",
-      "image": "/images/spcl2.jpg"
     }
   ]
 };
@@ -57,6 +47,7 @@ const backGround = {
   height: "100%"
 };
 function App() {
+  const panelsData = data.panels;
   const podsData = data.pods;
   return (
     <div>
@@ -69,7 +60,7 @@ function App() {
           "paddingRight": ".5%"
         }}>
           <Col>
-            <PromotionPanel />
+            <PromotionPanel panels={panelsData}/>
           </Col>
         </Row>
         <PodsRow podsDisp={podsData}/>
