@@ -1,4 +1,4 @@
-import React, { PureComponent } from "react";
+import React from "react";
 import "./NavBar.css";
 import { Nav, Container, Row, Col } from "react-bootstrap";
 
@@ -25,9 +25,6 @@ const ux_title1_white = {
   color: "white"
 };
 
-const ux_bold = {
-  "font-weight": "bold"
-};
 const NavBar = props => (
   <div style={headerColor}>
     <Container>

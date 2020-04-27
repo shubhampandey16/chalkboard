@@ -1,0 +1,54 @@
+{
+  "promotionalPanel": [],
+  "pods": [
+    {
+      "businessId": "sdkfh-sdkjs-sjkdfh-skjhfd-erhjkj",
+      "title": "ANCHO & AGAVE",
+      "image": "./food_img.jpg",
+      "category": "Restaurant",
+      "subCategory": "Mexican",
+      "displayType": "rotating",
+
+      "description": "Offering 20% off on specials",
+      "details": "Steak Day! This wednesday buy one get one free Steak Lunch at King's Kitchen.",
+      "address": "",
+      "phoneNumber": "",
+      "externalLink" : ["", ""]
+    },
+    {
+      "title": "Cafe XYZ",
+      "image": "./spcl2.jpg",
+      "displayType": "static"
+    },
+    {
+      "title": "ANCHO & AGAVE",
+      "description": "Offering 20% off on specials",
+      "details": "Steak Day! This wednesday buy one get one free Steak Lunch at King's Kitchen.",
+      "image": "./food_img.jpg"
+    },
+    {
+      "title": "Cafe XYZ",
+      "image": "./spcl2.jpg"
+    },
+    {
+      "title": "ANCHO & AGAVE",
+      "description": "Offering 20% off on specials",
+      "details": "Steak Day! This wednesday buy one get one free Steak Lunch at King's Kitchen.",
+      "image": "./food_img.jpg"
+    },
+    {
+      "title": "Cafe XYZ",
+      "image": "./spcl2.jpg"
+    },
+    {
+      "title": "ANCHO & AGAVE",
+      "description": "Offering 20% off on specials",
+      "details": "Steak Day! This wednesday buy one get one free Steak Lunch at King's Kitchen.",
+      "image": "./food_img.jpg"
+    },
+    {
+      "title": "Cafe XYZ",
+      "image": "./spcl2.jpg"
+    }
+  ]
+}
