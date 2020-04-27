@@ -23,20 +23,35 @@ const data = {
   ],
   "pods": [
     {
+      "businessId": "sdkfh-sdkjs-sjkdfh-skjhfd-erhjkj",
       "title": "ANCHO & AGAVE",
+      "image": "/images/anchoNagave.png",
+      "category": "Restaurant",
+      "subCategory": "Mexican",
+      "displayType": "static",
       "description": "Offering 20% off on specials",
       "details": "Steak Day! This wednesday buy one get one free Steak Lunch at King's Kitchen.",
-      "image": "/images/anchoNagave.png"
+      "address": "",
+      "phoneNumber": "",
+      "externalLink" : ["", ""]
     },
     {
+      "businessId": "dsfla-efkjg-askjn-wlkjs-erhjkj",
       "title": "Cafe XYZ",
-      "image": "/images/spcl2.jpg"
+      "image": "/images/spcl2.jpg",
+      "category": "Coffee",
+      "subCategory": "Coffee",
+      "displayType": "static"
     },
     {
-      "title": "Restaurant 2",
+      "businessId": "sdfjh-efkjg-sdfmh-wlkjs-erhjkj",
+      "title": "Culvers",
+      "image": "/images/food_img.jpg",
+      "category": "Restaurant",
+      "subCategory": "American",
+      "displayType": "static",
       "description": "Offering 20% off on specials",
-      "details": "Steak Day! This wednesday buy one get one free Steak Lunch at King's Kitchen.",
-      "image": "/images/food_img.jpg"
+      "details": "Steak Day! This wednesday buy one get one free Steak Lunch at King's Kitchen."
     }
   ]
 };

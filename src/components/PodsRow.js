@@ -5,7 +5,6 @@ import PromotionCards from "./PromotionCards/PromotionCards";
 class PodsRow extends React.Component {
   render() {
     const podsDisplay = [];
-    let count = 0;
 
     console.log("Iterating over pods");
     this.props.podsDisp.forEach((podDisp) => {
@@ -15,9 +14,8 @@ class PodsRow extends React.Component {
         description={podDisp.description}
         details={podDisp.details}
         image={podDisp.image}
-        key={count}/>
+        key={podDisp.businessId}/>
       );
-      count++;
     });
 
     return(
