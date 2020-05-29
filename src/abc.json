@@ -1,0 +1,50 @@
+const data = {
+    1: {
+      key: 1,
+      item: [
+        {
+          name: "Vietnam"
+        }
+      ]
+    },
+    2: {
+      key: 2,
+      item: [
+        {
+          name: "Vanuatu"
+        }
+      ]
+    },
+    3: {
+      key: 3,
+      item: [
+        {
+          name: "Finland"
+        }
+      ]
+    },
+    4: {
+      key: 4,
+      item: [
+        {
+          name: "Fiji"
+        }
+      ]
+    },
+    5: {
+      key: 5,
+      item: [
+        {
+          name: "Micronesia"
+        }
+      ]
+    },
+    6: {
+      key: "6",
+      item: [
+        {
+          name: "France"
+        }
+      ]
+    }
+  };

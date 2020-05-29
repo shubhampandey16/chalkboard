@@ -1,62 +1,32 @@
 import React from "react";
 import "./NavBar.css";
-import { Nav, Container, Row, Col } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import MenuSelection from "../MenuSelection/MenuSelection";
+import AutoComplete from "../AutoCompleteTextBox/AutoCompleteTextBox";
+import LoginPopUp from "./Login";
 
-const headerColor = {
-  width: "100%",
-  height: "60px",
-  background: "black"
-};
-const ux_body1_white = {
-  "font-size": "small",
-  color: "white",
-  "font-weight": "bold",
-  position: "relative",
-  left: "110px"
-};
-
-const ux_body1_contactUs = {
-  "font-size": "small",
-  color: "white",
-  "font-weight": "bold"
-};
-const ux_title1_white = {
-  height: "12px",
-  color: "white"
-};
-
-const NavBar = props => (
-  <div style={headerColor}>
-    <Container>
-      <header>
-        <Row>
-          <Nav
-            className="nav_toolbar"
-            activeKey="/home"
-            onSelect={selectedKey => alert(`selected ${selectedKey}`)}
-          >
-            <Col xs={2} md={2}>
-              <h1 style={ux_title1_white}>ChalkBoard</h1>
-            </Col>
-            <Col xs={{ size: 1, offset: 6 }} md={{ size: 1, offset: 6 }}>
-              <Nav.Item>
-                <Nav.Link href="/home" style={ux_body1_white}>
-                  Sign Up
-                </Nav.Link>
-              </Nav.Item>
-            </Col>
-            <Col xs={2} md={2}>
-              <Nav.Item>
-                <Nav.Link eventKey="enabled" enabled style={ux_body1_contactUs}>
-                  Contact US
-                </Nav.Link>
-              </Nav.Item>
-            </Col>
-          </Nav>
-        </Row>
-      </header>
-    </Container>
-  </div>
-);
+class NavBar extends React.Component {
+  render() {
+    return (
+      <div>
+        <Navbar bg="dark" variant="dark" expand="lg">
+          <Navbar.Brand href="#home">
+            <h1>{this.props.navData.appName}</h1>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="mr-auto">
+              <MenuSelection menuSelection={this.props.navData} />
+              <AutoComplete itemsList={this.props.navData.searchData} />
+            </Nav>
+            <LoginPopUp />
+            <Nav.Link href="#link">Sign Up</Nav.Link>
+            <Nav.Link href="#link">Contact Us</Nav.Link>
+          </Navbar.Collapse>
+        </Navbar>
+      </div>
+    );
+  }
+}
 
 export default NavBar;
